@@ -297,16 +297,17 @@ textarea {
             position: absolute;
             top: calc(100% + 1.5rem);
             height: 5px;
-            width: 90%;
+            width: 100%;
             background: #0062b9;
             left: 50%;
             transform: translateX(-50%);
             border-radius: 5px; }
             @media only screen and (max-width: 37.5em) {
               .about__content-title::after {
-                top: calc(100% + 1.2rem); } }
+                top: calc(100% + 1.2rem);
+            } }
     .about__content-details-para {
-      font-size: 2.5rem;
+      font-size: 2.3rem;
       color: rgb(205, 201, 201);
       letter-spacing: 1.6;
       line-height: 1.6;
@@ -317,6 +318,13 @@ textarea {
         margin: 0 3px; }
       .about__content-details-para:last-child {
         margin-bottom: 4rem; }
+
+        @media only screen and (max-width: 37.5em) {
+          .about__content-details-para {
+            max-width: 30rem;
+          }
+        }
+       
 
 .projects__row {
   display: grid;
@@ -791,6 +799,12 @@ textarea {
     color: #faf5f5;
       margin-bottom: 10px;
   }
+  @media only screen and (max-width: 37.5em) {
+    .serivces-container .serv-box  .pre{
+max-width: 85rem;
+font-size: 2.3rem;
+  }
+}
   
   .serivces-container .serv-box p {
       line-height: 2;
